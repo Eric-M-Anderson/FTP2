@@ -1,0 +1,31 @@
+$hue: 1;
+$saturation: 1;
+$lightness: 1;
+
+
+.submit-button1 {
+    display: block;
+    margin: 20px auto 15px auto;
+    width: 45%;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    background: linear-gradient(90deg, hsl(calc(236 * #{$hue}), calc(58% * #{$saturation}), calc(52% * #{$lightness})) 0%, hsl(calc(236 * #{$hue}), calc(58% * #{$saturation}), calc(63% * #{$lightness})) 100%);
+    text-align: center;
+    border-style: none;
+    min-height: 50px;
+  }
+  
+.submit-button1:hover {
+    display: block;
+    margin: 20px auto 15px auto;
+    width: 45%;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    //236 53 72
+    background: hsl(calc(236 * #{$hue}), calc(53% * #{$saturation}), calc(72% * #{$lightness}));
+    text-align: center;
+    border-style: none;
+    min-height: 50px;
+  }

@@ -1,0 +1,30 @@
+$hue: 1;
+$saturation: 1;
+$lightness: 1;
+
+
+.button1 {
+    display: block;
+    margin: 15px auto;
+    width: 90%;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    background: linear-gradient(90deg, hsl(calc(216 * #{$hue}), calc(95% * #{$saturation}), calc(45% * #{$lightness})) 0%, hsl(calc(216 * #{$hue}), calc(95% * #{$saturation}), calc(55% * #{$lightness})) 100%);
+    text-align: center;
+    border-style: none;
+    min-height: 70px;
+  }
+  
+.button1:hover {
+    display: block;
+    margin: 15px auto;
+    width: 90%;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    background: hsl(calc(216 * #{$hue}), calc(95% * #{$saturation}), calc(65% * #{$lightness}));
+    text-align: center;
+    border-style: none;
+    min-height: 70px;
+  }

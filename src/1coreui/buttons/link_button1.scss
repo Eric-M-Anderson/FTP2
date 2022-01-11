@@ -1,0 +1,35 @@
+$hue: 1;
+$saturation: 1;
+$lightness: 1;
+
+
+.button1 {
+    margin: 15px auto;
+    display: flex;
+    width: 90%;
+    min-height: 70px;
+    border-radius: 3px;
+    //background: linear-gradient(90deg, hsl(calc(216 * #{$hue}), calc(95% * #{$saturation}), calc(45% * #{$lightness})) 0%, hsl(calc(216 * #{$hue}), calc(95% * #{$saturation}), calc(55% * #{$lightness})) 100%);
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    align-items:center;
+    justify-content:center;
+  }
+  
+.button1:hover {
+    margin: 15px auto;
+    display: flex;
+    width: 90%;
+    min-height: 70px;
+    border-radius: 3px;
+    background: hsl(calc(233 * #{$hue}), calc(53% * #{$saturation}), calc(42% * #{$lightness}));
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    align-items:center;
+    justify-content:center;
+  }
