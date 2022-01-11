@@ -1,0 +1,91 @@
+$hue: 1;
+$saturation: 1;
+$lightness: 1;
+
+
+table {
+  display: block;
+  position: absolute;               
+  top: 30%;
+  left: 50%;                         
+  transform: translate(calc(-50% + 75px), -50%);
+  margin: auto;
+
+  background-color: transparent;
+  border-spacing: 0px;
+  //border-collapse: collapse;
+}
+
+/*Header*/
+
+thead{
+  tr:hover{
+    color: white;
+    background: hsl(calc(266 * #{$hue}), calc(54% * #{$saturation}), calc(43% * #{$lightness}));
+  }
+  
+  tr:not(:hover){
+    color: white;
+    background: hsl(calc(266 * #{$hue}), calc(54% * #{$saturation}), calc(53% * #{$lightness}));
+  }
+}
+
+/*Header Cells*/
+
+th {
+  padding: 10px;
+  text-align: center;
+  vertical-align: center;
+}
+
+tr:first-child {
+  th:first-child {
+    border-radius: 10px 0px 0px 0px;
+  }
+}
+
+tr:first-child {
+  th:last-child {
+    border-radius: 0px 10px 0px 0px;
+  }
+}
+
+/*Rows Cells*/
+
+td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: center;
+}
+
+tr:last-child {
+  td:first-child {
+    border-radius: 0px 0px 0px 10px;
+  }
+}
+
+tr:last-child {
+  td:last-child {
+    border-radius: 0px 0px 10px 0px;
+  }
+}
+
+/*Rows*/
+
+tbody{
+
+  tr:hover{
+    background-color: rgb(calc(150 * #{$hue}),calc(150 * #{$saturation}),calc(150 * #{$lightness}));
+  }
+    
+  tr:not(:hover):nth-child(odd){
+    background-color: rgb(calc(180 * #{$hue}),calc(180 * #{$saturation}),calc(180 * #{$lightness}));
+  }
+    
+  tr:not(:hover):nth-child(even){
+    background-color: rgb(calc(220 * #{$hue}),calc(220 * #{$saturation}),calc(220 * #{$lightness}));
+  }
+}
+
+
+
