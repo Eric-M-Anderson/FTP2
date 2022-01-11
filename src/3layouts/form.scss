@@ -1,0 +1,21 @@
+$hue: 1;
+$saturation: 1;
+$lightness: 1;
+
+.box1 {
+    display: block;
+    position: absolute;               
+    top: 50%;
+    left: 50%;                         
+    transform: translate(calc(-50% + 75px), -50%);
+    margin: auto;
+
+    width: 40%;
+    padding: 20px 0px;
+    max-height: 100%;
+    background-image: url(https://127.0.0.1/images/blue-strips.png);
+    background-size: 100% 100%;
+    border: 2px solid hsl(calc(216 *#{$hue}), calc(95% * #{$saturation}), calc(35% * #{$lightness}));
+    border-radius: 10px;
+    text-align: center;
+}

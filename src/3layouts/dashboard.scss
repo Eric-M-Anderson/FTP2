@@ -1,0 +1,24 @@
+$hue: 1;
+$saturation: 1;
+$lightness: 1;
+
+body {
+    font-family: Arial;
+    margin: 0px;
+    background-size: 100% 100%;
+    background: hsl(calc(200 * #{$hue}), calc(53% * #{$saturation}), calc(90% * #{$lightness}));
+  }
+
+.grid1{
+    display: grid;
+    grid-template-columns:150px 1fr;
+}
+  
+.grid1-item {
+    background: linear-gradient(90deg, hsl(calc(236 * #{$hue}), calc(58% * #{$saturation}), calc(52% * #{$lightness})) 0%, hsl(calc(236 * #{$hue}), calc(58% * #{$saturation}), calc(63% * #{$lightness})) 90%);
+    min-height: 100vh;
+}
+
+.grid2-item {
+    text-align: center;
+}
